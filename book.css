@@ -1,0 +1,13 @@
+#mylogo
+{
+    width:300px;
+    height: 300px;
+}
+body{
+    background: rgb(4,0,77);
+    background: linear-gradient(90deg, rgba(4,0,77,1) 0%, rgba(29,51,56,1) 56%, rgba(0,99,120,1) 72%, rgba(0,212,255,1) 100%, rgba(132,129,222,1) 100%, rgba(179,143,111,1) 100%, rgba(30,58,89,1) 100%);
+}
+#nm
+{
+    color:white;
+}

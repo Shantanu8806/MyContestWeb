@@ -1,0 +1,16 @@
+.logo
+{   
+
+    width:200px;
+    height: 200px;
+}
+.logodiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,52,83,1) 37%, rgb(61, 59, 140) 100%, rgba(179,143,111,1) 100%, rgba(30,58,89,1) 100%, rgba(0,212,255,1) 100%);
+}

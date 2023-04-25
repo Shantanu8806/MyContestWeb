@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelwithUs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="mynav" class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+              <a style="font-family:Georgia, 'Times New Roman', Times, serif; font-weight: bolder;" class="navbar-brand" href="#"><img class="logo py-0 px-0" src="TravelwithUs-logos_transparent.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Locations
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                      <li><a class="dropdown-item" href="#thane">Thane</a></li>
+                      <li><a class="dropdown-item" href="#navimumbai">Navi-Mumbai</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"></a></li> -->
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Transport options
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="buses.html" target="_blank">Bus
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bus-front-fill" viewBox="0 0 16 16">
+                          <path d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A43.608 43.608 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1v2ZM3.552 3.22A43.306 43.306 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44.304 44.304 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994ZM8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.304 44.304 0 0 0 8 4Zm-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1Z"/>
+                        </svg>
+                      </a></li>
+                      <li><a class="dropdown-item" href="buses.html">Local
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-train-front" viewBox="0 0 16 16">
+                          <path d="M5.621 1.485c1.815-.454 2.943-.454 4.758 0 .784.196 1.743.673 2.527 1.119.688.39 1.094 1.148 1.094 1.979V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V4.583c0-.831.406-1.588 1.094-1.98.784-.445 1.744-.922 2.527-1.118Zm5-.97C8.647.02 7.353.02 5.38.515c-.924.23-1.982.766-2.78 1.22C1.566 2.322 1 3.432 1 4.582V13.5A2.5 2.5 0 0 0 3.5 16h9a2.5 2.5 0 0 0 2.5-2.5V4.583c0-1.15-.565-2.26-1.6-2.849-.797-.453-1.855-.988-2.779-1.22ZM5 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm0 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm7 1a1 1 0 1 0-1-1 1 1 0 1 0-2 0 1 1 0 0 0 2 0 1 1 0 0 0 1 1ZM4.5 5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h3V5h-3Zm4 0v3h3a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-3ZM3 5.5A1.5 1.5 0 0 1 4.5 4h7A1.5 1.5 0 0 1 13 5.5v2A1.5 1.5 0 0 1 11.5 9h-7A1.5 1.5 0 0 1 3 7.5v-2ZM6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3Z"/>
+                        </svg>
+                      </a></li>
+                      <li><a class="dropdown-item" href="buses.html">Metro
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-train-front-fill" viewBox="0 0 16 16">
+                          <path d="M10.621.515C8.647.02 7.353.02 5.38.515c-.924.23-1.982.766-2.78 1.22C1.566 2.322 1 3.432 1 4.582V13.5A2.5 2.5 0 0 0 3.5 16h9a2.5 2.5 0 0 0 2.5-2.5V4.583c0-1.15-.565-2.26-1.6-2.849-.797-.453-1.855-.988-2.779-1.22ZM6.5 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm-2 2h7A1.5 1.5 0 0 1 13 5.5v2A1.5 1.5 0 0 1 11.5 9h-7A1.5 1.5 0 0 1 3 7.5v-2A1.5 1.5 0 0 1 4.5 4Zm.5 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm0 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-3-1a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM4 5.5a.5.5 0 0 1 .5-.5h3v3h-3a.5.5 0 0 1-.5-.5v-2ZM8.5 8V5h3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-3Z"/>
+                        </svg>
+                      </a></li>
+                      <li><a class="dropdown-item" href="https://csmia.adaniairports.com/" target="_blank">Flight
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                          <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+                        </svg>
+                      </a></li>
+                      <!-- <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"></a></li> -->
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a id="signin" href="login.html" target="_blank" class="nav-link ">Sign in/Log In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="signin" href="book.html" target="_blank" class="nav-link ">Book Tickets</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+<main>
+    <div class="thiscarousel">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://imgs.search.brave.com/zz1GqmWas5aPUnKfVaXGhVoCv1B-s_GsWBdMobqxZPI/rs:fit:1200:1100:1/g:ce/aHR0cHM6Ly93d3cu/c3BpbGxhcmQuY29t/L3dvcmRwcmVzcy93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMC8w/Mi9wdWJsaWMtdHJh/bnNwb3J0LTE5MDB4/MTEwMC5qcGc" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1 id="mainheadings">Mumbai BEST</h1>
+                <p>Know about BEST and the places to visit via BEST transport system of the city</p>
+                <p><a class="btn btn-lg btn-primary" href="/buses.html" target="_blank">Click here</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://imgs.search.brave.com/AFtEmthrvwAnexTGjJj9BK1Z-ieKQBKIT6WAnytzM44/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGhlaW5kaWFud2ly/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTcvMDcvTXVt/YmFpLU1ldHJvLmpw/Zw"class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/img"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 id="mainheadings">Mumbai Metro&local</h1>
+                <p>Know about the schedule of the newly inaugrated Mumbai Metro and the traditional Local train</p>
+                <p><a class="btn btn-lg btn-primary" href="buses.html">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mumbai_03-2016_114_Airport_international_terminal_interior.jpg/1200px-Mumbai_03-2016_114_Airport_international_terminal_interior.jpg"class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption text-end fw-bolder">
+                <h1 id="mainheadings">Mumbai Airport</h1>
+                <p>Know about the schedule of Domestic and International Flights from Mumbai</p>
+                <p><a class="btn btn-lg btn-primary" href="">Know the schedule</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+   <center>
+    <div class="py-5 container flex justify-content-center align-items-center">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="https://imgs.search.brave.com/AsVPtHKENSMxTiyAdt-kIR5UsHNnqmd0wcMbJYMjdw8/rs:fit:1200:720:1/g:ce/aHR0cDovL3N0YXRp/Yy5kbmFpbmRpYS5j/b20vc2l0ZXMvZGVm/YXVsdC9maWxlcy9z/dHlsZXMvZnVsbC9w/dWJsaWMvMjAxOC8w/My8wOC82NTg2MDMt/YmVzdC1idXMuanBn" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 id="roundtitles" class="fw-normal">BEST</h2>
+           <p class="text-light">Mumbai city bus route no 234 is operated by BEST. In Mumbai there are seven bus lines: BEST, KDMT, KMT, MBMT, NMMT, TMT, and, VVMT. BEST is the company that primarily operates the public bus transport service in Mumbai and runs multiple number of city buses. BEST runs many buses between Vesave / Yari Road Bus Station and Jogeshwari Bus Station on daily basis.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="https://www.mumbaimetrocity.com/wp-content/uploads/2015/03/Mumbai-New-Local-Train-2015-0.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+  
+          <h2 id="roundtitles" class="fw-normal">Metro and local</h2>
+          <p class="text-light">The Mumbai Metro is a rapid transit (MRT) system serving the city of Mumbai and the wider Mumbai Metropolitan Region in Maharashtra, India. Mumbai Metropolitan Region Development Authority is the responsible authority for maintaining the metro system.Mumbai Suburban Railway is a 390 kilometer (240 mi) suburban railway network that began its operations in 1853.0 It consists of exclusive inner suburban railway lines augmented by commuter rail on outlying suburbs to serve the Mumbai Metropolitan Region and carries more than 7.5 million commuters daily.1 Popularly known as locals, the three lines are the Central Main Line, the Western Line and the Harbour Line which run round-the-clock</p>
+          <p ><a class="btn btn-secondary" href="buses.html" target="_blank">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="https://www.365telugu.com/wp-content/uploads/2019/10/Air-India-at-GVK-CSMIA.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+  
+          <h2 id="roundtitles" class="fw-normal">Airport</h2>
+          <p class="text-light">Chhatrapati Shivaji Maharaj International Airport (IATA: BOM, ICAO: VABB) is an international airport serving Mumbai and the Mumbai Metropolitan Region (MMR). It is the second busiest airport in the country in terms of total and international passenger traffic after Delhi, and was the 14th busiest airport in Asia and 41st busiest airport in the world by passenger traffic in calendar year 2019.</p>
+          <p class="py-5"><a class="btn btn-secondary" href="https://csmia.adaniairports.com/" target="_blank">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+   </center>
+   <div id="calander">
+    <div class="calendar"></div>
+   </div>
+</main>
+
+    <div  id="myfooter"class=" text-light bg-light">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <p class="text-dark">&copy; 2023</p>
+          </div>
+          
+          <div class="col mb-1">
+           <img class="greenlogo" src="TravelwithUs-logos_transparent.png" alt="">
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Places</a></li>
+              <li class="nav-item mb-2"><a href="#signin" class="nav-link p-0 text-dark">Sign In</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Booking</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Accomodation</a></li>
+              <li class="nav-item mb-2"><a href="https://www.google.com/maps/@16.8329216,74.6029056,14z" target="_blank" class="nav-link p-0 text-dark">Maps</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Restaurants</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Emergency</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Contact us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">travelwithus2023@gmail.com</a></li>
+              <li class="nav-item mb-2"><a href="#signin" class="nav-link p-0 text-dark">+23 66461279</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
